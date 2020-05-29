@@ -6,4 +6,4 @@ isLeapYear year
     | isYearDivisible 100 = False
     | isYearDivisible 4 = True
     | otherwise = False
-    where isYearDivisible x = year `mod` x == 0
+    where isYearDivisible x = year `rem` x == 0
